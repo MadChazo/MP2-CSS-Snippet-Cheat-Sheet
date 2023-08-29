@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="assets/css/style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>CSS Snippet Cheat Sheet</h1>
+      <p>
+        Ever have trouble recalling the exact syntax for your favorite CSS code?
+        Give it a permanent home, and add it to this page! Select any snippet
+        below, and it will automatically select all of the code for you to copy.
+      </p>
+    </header>
+    <main>
+      <section class="card">
+        <h2>Overlay Title on Card Border</h2>
+        <p>
+          Use position properties and margins to raise elements higher than
+          their natural starting point and center them.
+        </p>
+        <pre>
+.card h2 {
+  position: relative;
+  margin: auto;
+  top: -20px;
+  left: 0;
+  right: 0;
+  width: 95%;
+}
+        </pre>
+      </section>
+      <section class="card">
+        <h2>Linear Gradient</h2>
+        <p>This will create a background linear gradient from top to bottom.</p>
+        <pre>
+.card {
+  background-image: linear-gradient(
+    color-1 0%,
+    color-2 100%
+    );
+}
+        </pre>
+      </section>
+      <section class="card">
+        <h2>Box Transition Glow</h2>
+        <p>Use transition and box shadows to glow on hover.</p>
+        <pre>
+.card {
+  transition: all 0.5s ease-in-out;
+}
+
+.card h2 {
+  transition: all 0.5s ease-in-out;
+}
+
+.card:hover, .card:hover h2 {
+  box-shadow: inset 0 0 8px color, 0 0 15px color;
+}
+        </pre>
+      </section>
+      <section class="card">
+        <h2>Title</h2>
+        <p>Description</p>
+        <pre>
+ccs code
+        </pre>
+      </section>
+      <section class="card">
+        <h2>Title</h2>
+        <p>Description</p>
+        <pre>
+css code
+        </pre>
+      </section>
+      <section class="card">
+        <h2>Title</h2>
+        <p>Description</p>
+        <pre>
+css code
+        </pre>
+      </section>
+    </main>
+    <footer><h3>Made with ❤️ and CSS</h3></footer>
+  </body>
+</html>

@@ -1,0 +1,94 @@
+:root {
+  --bg: #2a3238;
+  --accent: #c9e2ec;
+  --main: #e25aee;
+  --shadow: #84458a;
+}
+
+* {
+  box-sizing: border-box;
+}
+body {
+  background-color: var(--bg);
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+}
+
+h1 {
+  color: var(--main);
+  margin: 30px auto 5px auto;
+}
+
+header p {
+  color: var(--accent);
+  margin: 0 auto 40px auto;
+  width: 75%;
+  font-size: 14px;
+}
+
+main {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.card {
+  border: dashed var(--accent) 1.75px;
+  padding: 10px;
+  width: 31%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  transition: all 0.5s ease-in-out;
+  margin: 0 0 20px 0;
+}
+
+.card h2 {
+  position: relative;
+  margin: 0 auto;
+  color: var(--main);
+  top: -20px;
+  left: 0;
+  right: 0;
+  border: solid var(--accent) 1.75px;
+  border-radius: 5px;
+  background-color: var(--bg);
+  width: 95%;
+  text-align: left;
+  padding: 5px;
+  font-size: 20px;
+  flex: 0 1 auto;
+  transition: all 0.5s ease-in-out;
+}
+
+.card p {
+  color: var(--main);
+  font-size: 14px;
+  text-align: left;
+  margin: -10px 0 5px 0;
+  flex: 0 1 auto;
+}
+
+.card pre {
+  text-align: left;
+  font-size: 12px;
+  font-family: monospace;
+  color: var(--accent);
+  background-image: linear-gradient(var(--shadow) 0%, var(--main) 100%);
+  padding: 10px;
+  border-radius: 5px;
+  margin: 0;
+  line-height: 1.4;
+  white-space: pre-wrap;
+  width: 100%;
+  flex: 1 1 auto;
+}
+
+.card:hover,
+.card:hover h2 {
+  box-shadow: inset 0 0 8px var(--main), 0 0 15px var(--main);
+}
+
+h3 {
+  color: var(--main);
+}

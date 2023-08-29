@@ -82,6 +82,7 @@ main {
   white-space: pre-wrap;
   width: 100%;
   flex: 1 1 auto;
+  user-select: all;
 }
 
 .card:hover,
@@ -91,4 +92,16 @@ main {
 
 h3 {
   color: var(--main);
+}
+
+@media only screen and (max-width: 992px) {
+  .card {
+    width: 48%;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .card {
+    width: 98%;
+  }
 }
